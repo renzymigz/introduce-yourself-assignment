@@ -9,7 +9,9 @@
 }
 
 body {
-    background-color: #ffffff; 
+    background-image: url(images/background.jpg);
+    background-repeat: repeat;
+    background-size: 30em;
 }
 
 header {
@@ -23,13 +25,13 @@ header {
 }
 
 .navbar {
-    margin-bottom: 20px;
+    box-shadow: 0 5px 0 rgb(0, 0, 0), 0 10px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 .navbar ul{
     list-style-type:none;
     background-color: rgb(226, 225, 225);
-    box-shadow: 0 5px 0 rgb(0, 0, 0), 0 5px 20px rgb(0, 0, 0);
     display: flex;
     justify-content: center;
 }
@@ -49,21 +51,23 @@ header {
     color: white;
 }
 
-/* main part na sa website aaaargggh */
+/* ------------------------------ MAIN BOX PART OF THE WEBSITE ------------------------------ */
 
 #section-1 {
-    height: 650px;
-    width: 100%;
-    display: inline-block;
-    margin-top: 50px;
+    height: 690px;
+    width: 1515px;
+    display: block;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 0px 0px 20px;
 }
 
 #section-2{
     height: 700px;
     background-color: rgb(226, 225, 225);
-    display: inline-block;
-    width: 100%;
-    margin-top: 50px;
+    display: block;
+    width: 1515px;
+    margin: 0px auto;
     box-shadow: 0px 0px 20px;
 }
 
@@ -71,7 +75,7 @@ header {
     height: 700px;
     background-color: rgb(255, 255, 255);
     display: inline-block;
-    width: 100%;
+    width: 1515px;
     box-shadow: 0px 0px 20px;
 }
 
@@ -79,7 +83,7 @@ header {
     height: 900px;
     background-color: rgb(226, 225, 225);
     display: inline-block;
-    width: 100%;
+    width: 1515px;
     box-shadow: 0px 0px 20px;
 }
 
@@ -87,7 +91,7 @@ header {
     height: 1200px;
     background-color: rgb(255, 255, 255);
     display: inline-block;
-    width: 100%;
+    width: 1515px;
     box-shadow: 0px 0px 20px;
 }
 
@@ -95,12 +99,12 @@ header {
     height: 700px;
     background-color: rgb(226, 225, 225);
     display: inline-block;
-    width: 100%;
+    width: 1515px;  
     box-shadow: 0px 0px 20px;
     box-sizing: border-box;
 }
 
-/* customziation sa uhhh kuan head titles */
+/* ------------------------------ HEAD TITLES CUSTOMIZATION ------------------------------*/
 
 .section-title {
     text-align: center; 
@@ -116,7 +120,7 @@ header {
     animation: blink 1s infinite;
 }
 
-/* HOME */
+/* ------------------------------ HOME ------------------------------ */
 
 .home-introduction{
     text-align: center;
@@ -158,7 +162,7 @@ header {
     padding: 50px;
 }
 
-/* About Me na aaaarrrgghh */
+/* ------------------------------ ABOUT ME ------------------------------ */
 
 .aboutme-introduction{
     margin-left: 5%;
@@ -219,7 +223,7 @@ section p{
     text-justify: inter-character;
 }
 
-/* EDUCATIONAL NAKOOOOOOO YIPEEE*/
+/* ------------------------------ EDUCATIONAL ------------------------------ */
 
 .educational-line{
     width: 90%;
@@ -258,7 +262,7 @@ section p{
     width: 430px;
     height: 310px;
     padding: 30px;
-    margin: 10px 40px 10px 40px;
+    margin: 10px 25px 10px 25px;
     justify-content: flex-start;
     align-items: center;
     border-radius: 20px;
@@ -274,7 +278,7 @@ section p{
     filter: none;
 }
 
-/* SKILLSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+/* ------------------------------ SKILLS ------------------------------ */
 
 .skill-set-container{
     text-align: center;
@@ -300,7 +304,7 @@ progress::before {
     content: "Progression/Mastery: " attr(value) "%";
     font-style: italic;
     position: absolute;
-    width: 60%;
+    width: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,7 +322,7 @@ progress::-webkit-progress-bar{
     background-color: rgb(255, 255, 255);
 } 
 
-/* feaTURED ROEJCTSSSSSSSSSSS */
+/* ------------------------------ FEATURED PROJECTS ------------------------------ */
 
 .first-game-project{
     margin-bottom: 70px;
@@ -388,7 +392,7 @@ progress::-webkit-progress-bar{
     float: right;
 }
 
-/* CONTAAACTS NAGUID */
+/* ------------------------------ CONTACTS ------------------------------ */
 
 .contact-line{
     width: 90%;
@@ -427,7 +431,7 @@ progress::-webkit-progress-bar{
     width: 450px;
     height: 150px;
     padding: 0 20px;
-    margin: 20px 40px 30px 20px;
+    margin: 20px 20px 30px 20px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -449,7 +453,7 @@ progress::-webkit-progress-bar{
     box-shadow: 6px 6px 0px rgb(0, 0, 0), 12px 12px 0px rgb(255, 255, 255), 0 0 20px black;
     font-weight: bold;
 }
-/* FOOTER YIPEEE */
+/* ------------------------------ FOOTER  ------------------------------ */
 footer {
     position: fixed;
     bottom: 0;
@@ -463,7 +467,7 @@ footer {
     font-style: italic;
     font-size: 13px;
 }
-
+/* ------------------------------ DISPLAY CUSTOMIZATION ------------------------------ */
 @media screen and (max-width: 1000px){
     #section-3{
         overflow-y: scroll;
@@ -477,6 +481,12 @@ footer {
         flex-direction: column;
         overflow-y: scroll;
     }
+
+    #section-6{
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
     .contact-info-container {
         flex-direction: column;
     }
